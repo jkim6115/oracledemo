@@ -33,9 +33,8 @@ WHERE d.department_id = e.department_id;
 
 
 
-
-
-
+SELECT * FROM mem
+ORDER BY num DESC;
 
 
 
