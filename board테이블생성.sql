@@ -30,7 +30,8 @@ values(board_num_seq.nextval, '홍길동','young@aaaa.com','제목1',sysdate,0,b
 
 commit;
 
-SELECT * FROM board;
+SELECT * FROM board
+ORDER BY num;
 
 select num, readcount 
 from board
@@ -39,7 +40,7 @@ where num=2;
 
 select num, subject, ref, re_step, re_level
 from board
-order by ref desc, re_step asc
+order by ref desc, re_step ASC;
 
 
 
@@ -53,7 +54,7 @@ where b.rm>=? and b.rm<=?
 
 
 delete from board
-where num=21
+where num=8;
 
 drop table board;
 
@@ -64,7 +65,8 @@ select b.* from
   order by ref desc, re_step asc) a)b
 where b.rm >=1  and b.rm<=5
 
-delete from board where num=23;
+
+delete from board where num=2;
 
 WebServlet("/board/*")
 
@@ -89,7 +91,6 @@ select rownum, b.*
  from(select rownum as rm, a.*
  from(select * from board order by ref desc ,re_step asc)a)b
  where b.rm>=? and b.rm <=?
-
 
 
 
