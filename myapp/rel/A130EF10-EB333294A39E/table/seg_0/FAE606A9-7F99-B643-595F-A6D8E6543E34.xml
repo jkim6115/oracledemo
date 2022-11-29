@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAE606A9-7F99-B643-595F-A6D8E6543E34" name="comment">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:04:27 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnum" id="F1A0CE5C-0830-30BC-7BB6-C3959A122564">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:06:00 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bnum" id="FBF29640-AC7D-9D46-8697-241FBCC42E79">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:06:30 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D21FCFF3-1B78-EE9F-4602-0F53E761367F" referredColumn="804265B1-6C4D-56DF-3820-932D9D4906B9"/>
+</associations>
+</Column>
+<Column name="content" id="B7D4A256-0DE4-1A05-D54C-8BED737907A6">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:07:27 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22624E50-008F-3920-EDE1-A21CB26FDCCD" name="comment_PK">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:06:00 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A0CE5C-0830-30BC-7BB6-C3959A122564"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFA22169-E366-E5A6-6181-0136EBF9DC95" name="comment_board_FK">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 10:09:17 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBF29640-AC7D-9D46-8697-241FBCC42E79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

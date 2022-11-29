@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="myapp" id="3EE795A5-1EF9-DC2A-B77D-DB0FE9932CCA" version="3.5">
+<createdBy>EZEN</createdBy>
+<createdTime>2022-11-29 09:23:14 UTC</createdTime>
+<ownerDesignName>myapp</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3EE795A5-1EF9-DC2A-B77D-DB0FE9932CCA</designId>
+</OSDM_Design>
